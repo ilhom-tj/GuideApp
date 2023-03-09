@@ -24,8 +24,8 @@ class GuideCell: UITableViewCell {
     func setGuide(guide : GuideData){
         guideImage.sd_setImage(with: URL(string: guide.icon))
         guideLabel.text = guide.name
-        guideStart.text = guide.startDate
-        guideEnd.text = guide.endDate
+        guideStart.text = "Start: "+guide.startDate
+        guideEnd.text = "End: "+guide.endDate
         
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
